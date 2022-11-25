@@ -16,11 +16,11 @@ void getBin(unsigned long long a){
 
     for (int i = 0; i >-1; i++){
         list.push_back(a%2);
-        a = floor(a/2);
+        a = a/2;
 
-	if (a <1){
-		break;
-	}
+        if (a <1){
+            break;
+        }
     }
 
 	reverse(list.begin(), list.end()); //Reverse vector
@@ -43,7 +43,7 @@ int main(){
     #endif
 
     for(;;){
-        cout << CYAN << "Note: Max number is 18,400,000,000,000,000,000." << endl<< NORM;
+        cout << CYAN << "Note: Max number is 18,446,744,073,709,551,615." << endl<< NORM;
         cout << "To exit, press ";
 
         #ifdef _WIN32
