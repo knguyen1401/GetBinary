@@ -18,9 +18,9 @@ void getBin(unsigned long long a){
         list.push_back(a%2);
         a = floor(a/2);
 
-		if (a <1){
-			break;
-		}
+	if (a <1){
+		break;
+	}
     }
 
 	reverse(list.begin(), list.end()); //Reverse vector
