@@ -145,7 +145,6 @@ int main(){
         cin >> b;
 
         clear();
-
     }
     return 0;
 }
